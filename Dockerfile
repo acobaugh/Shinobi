@@ -3,7 +3,7 @@ FROM mhart/alpine-node:8
 WORKDIR /opt/shinobi
 
 # Install package dependencies
-RUN apk add --update --no-cache ffmpeg python pkgconfig cairo-dev make g++ jpeg-dev
+RUN apk add --update --no-cache ffmpeg python pkgconfig cairo-dev make g++ jpeg-dev pango-dev
 
 # Install NodeJS dependencies
 COPY package.json /opt/shinobi
